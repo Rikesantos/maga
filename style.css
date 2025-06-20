@@ -1,0 +1,182 @@
+/* Reset básico e estilos gerais para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Cor de fundo cinza claro, comum em e-commerce */
+}
+
+/* Estilo do Cabeçalho */
+.header {
+    background-color: #0086ff; /* Azul característico do Magalu */
+    color: white;
+    padding: 10px 20px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo img {
+    width: 150px; /* Ajuste do tamanho do logo */
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    width: 50%; /* Ocupa metade do espaço */
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+}
+
+.search-bar i {
+    color: #0086ff; /* Ícone da lupa em azul */
+    cursor: pointer;
+}
+
+.user-options {
+    display: flex;
+    gap: 20px; /* Espaçamento entre as opções de usuário */
+}
+
+.user-options .option {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Espaço entre o ícone e o texto */
+    cursor: pointer;
+}
+
+/* Estilo da Barra de Navegação */
+.main-nav {
+    background-color: #0077e6; /* Um tom de azul um pouco mais escuro */
+    padding: 10px 0;
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Espaçamento entre os links */
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Conteúdo Principal */
+.main-content {
+    max-width: 1200px;
+    margin: 20px auto; /* Centraliza e adiciona espaço */
+    padding: 0 20px;
+}
+
+.banner img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Seção de Produtos */
+.products-section {
+    margin-top: 30px;
+}
+
+.products-section h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.products-grid {
+    display: grid;
+    /* Cria 4 colunas de tamanho igual */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px; /* Espaço entre os cards */
+}
+
+.product-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra suave */
+    transition: transform 0.2s; /* Efeito de transição */
+}
+
+/* Efeito de hover para o card "levantar" um pouco */
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-size: 16px;
+    color: #333;
+    height: 50px; /* Define uma altura fixa para alinhar os títulos */
+}
+
+.product-card .price {
+    font-size: 22px;
+    font-weight: bold;
+    color: #0086ff; /* Preço em azul */
+    margin: 10px 0;
+}
+
+.buy-button {
+    background-color: #2fb134; /* Verde do botão comprar */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.buy-button:hover {
+    background-color: #258a28; /* Cor mais escura ao passar o mouse */
+}
+
+/* Rodapé */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    color: white;
+    margin: 0 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
